@@ -7,7 +7,7 @@ layout: default
 [[Resume](/assets/resume.pdf)]
 
 ## Some Quick Facts about Me
-- I hope to build AGI
+- I hope to build safe AGI
 - I like compilers, computer architecture, LLMs, and agentic systems
 - I enjoy reading AI papers daily
 - My favorite languages are Python, Go, Rust, and C
