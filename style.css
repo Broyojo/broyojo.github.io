@@ -146,13 +146,13 @@ nav {
 main {
     max-width: 650px;
     margin: 0 auto;
-    padding: 2.5rem 1.5rem 4rem;
+    padding: 1.75rem 1.5rem 4rem;
 }
 
 /* ── Sections ── */
 section {
-    margin-bottom: 2.5rem;
-    padding-bottom: 2.5rem;
+    margin-bottom: 1.75rem;
+    padding-bottom: 1.75rem;
     border-bottom: 1px solid var(--divider);
 }
 
@@ -186,11 +186,11 @@ section p:last-child {
 }
 
 .photo-wrapper {
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 1rem;
     box-shadow: 0 4px 20px var(--photo-shadow);
 }
 
@@ -205,7 +205,7 @@ section p:last-child {
 .greeting {
     font-size: 1.15rem;
     color: var(--text-muted);
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .hero .social-links {
@@ -385,8 +385,8 @@ footer {
     }
 
     .photo-wrapper {
-        width: 130px;
-        height: 130px;
+        width: 100px;
+        height: 100px;
     }
 
     main {
