@@ -1,2 +1,8 @@
 .DS_Store
 notes/
+resume/main.pdf
+resume/*.aux
+resume/*.log
+resume/*.out
+resume/*.fls
+resume/*.fdb_latexmk

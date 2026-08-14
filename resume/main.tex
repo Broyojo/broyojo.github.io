@@ -1,0 +1,109 @@
+%--------------------------------
+% Last-First-Resume (1-page, expanded)
+% Author: David Andrews
+%--------------------------------
+
+\documentclass[11pt]{article}
+
+\usepackage{resumeutils}
+\usepackage[letterpaper, margin=0.5in, footskip=0.25in]{geometry}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+\usepackage{fontawesome}
+
+\hypersetup{
+    colorlinks=true,
+    allcolors=black
+}
+
+\begin{document}
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\LARGE David Andrews} &
+    (908) 723-5723 $\vert$
+    \href{mailto:dha@xoba.com}{\textbf{dha@xoba.com}} $\vert$
+    \href{https://broyojo.com}{broyojo.com} $\vert$
+    \href{https://www.linkedin.com/in/broyojo/}{\faLinkedinSquare \textbf{ @broyojo}} $\vert$
+    \href{https://github.com/broyojo}{\faGithubSquare \textbf{ @Broyojo}}
+\end{tabular*}
+
+% ----------------------------------------------------------------------------
+\section{Education}
+\listStart
+\lrHeading{Georgia Institute of Technology, Atlanta, GA}{B.S. in Computer Science}{Aug. 2023 -- May 2026}
+
+\labledItem
+{GPA}{4.0/4.0}
+\vspace{-0.7em}
+\labledItem
+{Courses}{DL, ML, Systems for ML, Intro to AI, NLP, Perception and Robotics, Algorithms, OS}
+
+\listEnd
+
+% ----------------------------------------------------------------------------
+\section{Experience}
+\listStart
+
+\lrHeading{Georgia Tech, Chao Zhang Lab}{Lead Undergraduate Researcher, Artificial Intelligence}{Aug. 2024 -- Present}
+\indentedListStart
+\bulletedItem{Leading a team of 3 building a general tool-using agent framework with Docker sandboxes and an MCP interface (browser, terminal, code execution), supporting multi-turn rollouts across math, search, SWE-bench, and puzzle tasks.}
+\bulletedItem{Trained multi-turn LLM agents with GRPO on SWE-bench, SWE-Smith, and SWE-Gym, adding reward-hacking defenses, tool-use checks, and rollout instrumentation to improve training stability.}
+\bulletedItem{Scaled asynchronous PPO/GRPO/RLVR training using AReaL on Ray to maximize throughput under high tool latency, coordinating rollout workers with sandboxes on a Kubernetes cluster across 8-GPU machines.}
+\indentedListEnd
+
+\lrHeading{Georgia Tech, Qirun Zhang Lab}{Undergraduate Researcher, Systems}{Jan. 2026 -- Present}
+\indentedListStart
+\bulletedItem{Leading development of an LLM agent harness for automated bug finding and fixing in LLVM, with specialized tool skills for navigating large-scale systems codebases with long build times.}
+\bulletedItem{Investigating agent-based commit bisection to accelerate identification of bug-introducing changes, reducing manual debugging effort in complex compiler histories.}
+\indentedListEnd
+
+\lrHeading{Georgia Tech, EIC Lab}{Undergraduate Researcher, Hardware Design}{Feb. 2026 -- Present}
+\indentedListStart
+\bulletedItem{Curating a $\sim$250-task SWE-bench-style benchmark for Verilog/RTL hardware design derived from real-world GitHub PRs, using Verilator, Yosys, and Icarus Verilog for functional verification.}
+\bulletedItem{Developing an agent harness to evaluate frontier models on industry-relevant hardware design tasks, targeting state-of-the-art performance on the benchmark.}
+\indentedListEnd
+
+\lrHeading{DuckAI}{AI Research Lead}{Aug. 2023 -- Present}
+\indentedListStart
+\bulletedItem{Engineered \textbf{DuckTrack}, a cross-platform computer-use capture tool adopted by \href{https://os-world.github.io/}{OSWorld} and \href{https://opencua.xlang.ai/}{OpenCUA} for benchmarking and foundation model training.}
+\bulletedItem{Led development of \textbf{PRMBench}'s full-stack \href{https://github.com/TheDuckAI/prm_annotation_platform}{annotation platform} (React, FastAPI, SQLite), managing a team of annotators and improving labeling speed and inter-annotator agreement for process reward model datasets.}
+\bulletedItem{Built large-scale TTS data pipelines (YouTube and podcast ingestion, upscaling, VAD, diarization) and contributed optimizations to \href{https://github.com/Vaibhavs10/insanely-fast-whisper}{insanely-fast-whisper} to accelerate transcription for speech datasets.}
+\indentedListEnd
+
+\listEnd
+
+% ----------------------------------------------------------------------------
+\section{Selected Projects}
+\listStart
+
+\lrLabel{\href{https://duckai-site.netlify.app/blog/ducktrack}{DuckTrack}}{Nov. 2023 -- Jan. 2024}
+\indentedListStart
+\bulletedItem{Extended and maintained precise cross-platform capture of screen, keyboard, and mouse events, synchronizing native input APIs with OBS to achieve millisecond-level sub-frame alignment for computer-use datasets.}
+\indentedListEnd
+
+\lrLabel{\href{https://www.lesswrong.com/posts/XC28DmEYPLqfwc8tf/we-need-a-better-way-to-evaluate-emergent-misalignment}{Emergent Misalignment}}{Oct. 2025 -- Jan. 2026}
+\indentedListStart
+\bulletedItem{Replicated and investigated emergent misalignment arising from benign fine-tuning of LLMs; findings published on LessWrong.}
+\indentedListEnd
+
+\lrLabel{AlphaEvolve Extensions}{May 2025 -- Sept. 2025}
+\indentedListStart
+\bulletedItem{Extended \href{https://github.com/algorithmicsuperintelligence/openevolve}{OpenEvolve}, an open-source replication of Google DeepMind's AlphaEvolve, with new combinatorics domains including circle-packing and sphere-packing; built a parallelized parameter sweep system using Optuna.}
+\bulletedItem{Co-contributed to an upstreamed PR adding MLIR attention kernel optimization tasks, achieving a 1.32x+ kernel speedup via evolved transformation parameters.}
+\indentedListEnd
+
+\listEnd
+% ----------------------------------------------------------------------------
+\section{Skills}
+\listStart
+\setlength{\itemsep}{0em}
+\labledItem{Languages}{Python, Rust, C, C++, Go, JavaScript, Bash, Verilog}
+\vspace{-0.3em}
+\labledItem{ML}{PyTorch, vLLM, SGLang, Ray, AReaL, veRL, HuggingFace}
+\vspace{-0.3em}
+\labledItem{Systems}{Linux, Docker, Kubernetes, SLURM, AWS, FastAPI, SkyPilot, uv, Git}
+\listEnd
+
+
+\lfoot{\footnotesize{Rev. \today}}
+
+\end{document}
